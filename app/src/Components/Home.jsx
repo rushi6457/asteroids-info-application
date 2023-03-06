@@ -38,6 +38,7 @@ const Home = () => {
           <GridItem key={date} >
             <Heading bgColor={'red.500'} 
             color='white'
+            className='date'
             borderRadius={'1rem'} size='md' padding={'2%'}borderTop={'1px'} borderLeft={'1px solid'} borderRight={'1px solid'}>{date}</Heading>
             <Grid  gap='40px'>
               {asteroids[date].map((asteroid) => {
@@ -45,7 +46,7 @@ const Home = () => {
                     
                 <GridItem bgColor={'green.200'}
                 color='black'
-                borderRadius={'1rem'} key={asteroid.id} gap='10px' textAlign={'justify'} padding={'1rem'}>
+                borderRadius={'1rem'} key={asteroid.id} gap='10px' textAlign={'justify'} padding={'1rem'} className='griditem'>
                   <Heading size={'md'}>{`Astroid Name: ${asteroid.name}`}</Heading>
                   <Text fontSize={'1.3rem'}>{`Closest To the Earth on: ${asteroid.close_approach_data[0].close_approach_date_full}`}</Text>
                   <Text fontSize={'1.3rem'}>Estimated Diameter (KM): {asteroid.estimated_diameter.kilometers.estimated_diameter_max}</Text>

@@ -39,6 +39,14 @@ details > p {
 details[open] > summary {
   background-color: #ccf;
 }
+.griditem:hover{
+    transform: scale(1.1);
+   box-shadow: rgba(8, 8, 8, 0.4) -5px 5px, rgba(2, 2, 2, 0.3) -10px 10px, rgba(5, 5, 5, 0.2) -15px 15px, rgba(2, 2, 2, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+.date:hover{
+      transform: scale(1.1);
+  box-shadow: rgba(8, 8, 8, 0.4) -5px 5px, rgba(2, 2, 2, 0.3) -10px 10px, rgba(5, 5, 5, 0.2) -15px 15px, rgba(2, 2, 2, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
 
 
 @media screen and (max-width:650px) and (min-width:200px) {
